@@ -1,4 +1,4 @@
 ---
-wordConfig
-  preamble The lucky word is
-  luckyWord Irish
+someWords
+  cuvant Primul cuvant este
+  altCuvant Microserviciu
