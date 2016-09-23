@@ -1,0 +1,11 @@
+---
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/blackmarlen/Microservices-Endava
+          searchPaths: ConfigData
+server:
+  port: 8001
+  address : localhost
