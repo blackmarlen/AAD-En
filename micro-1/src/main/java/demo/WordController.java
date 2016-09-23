@@ -6,16 +6,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-//@EnableConfigurationProperties
-@ConfigurationProperties(prefix="cuvinte")
+@EnableConfigurationProperties
+//@ConfigurationProperties(prefix="cuvinte")
 public class WordController {
 
 	String cuvant;
 	String altCuvant;
+	String text;
 	
 	@RequestMapping("/lucky-word")
 	public String showLuckyWord() {
-		return cuvant + ": " + altCuvant;
+//		return cuvant + ": " + altCuvant;
+		return text;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
 	}
 
 	public String getCuvant() {
