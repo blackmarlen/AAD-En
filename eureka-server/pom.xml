@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>common-eureka-server</name>
-	<description>Eureka server suitable for use with most course labs</description>
+	<description>Simple Eureka server</description>
 
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
@@ -42,7 +42,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<!-- Required to avoid problems with classpath scanning in Jersey 1.x.  See Spring Cloud reference. -->
 			    <configuration>
 			        <requiresUnpack>
 			            <dependency>
