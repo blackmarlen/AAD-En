@@ -4,7 +4,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/blackmarlen/Microservices-Endava
+          uri: https://github.com/blackmarlen/AAD-En
           searchPaths: ConfigData
 server:
   port: 8001
