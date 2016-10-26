@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-//@EnableConfigurationProperties
 @ConfigurationProperties(prefix="cuvinte")
 public class WordController {
 
